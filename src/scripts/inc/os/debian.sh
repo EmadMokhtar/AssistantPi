@@ -2,7 +2,7 @@
 
 function install_os {
     apt-get update
-    apt-get install curl git build-essential python-dev python-setuptools swig libasound2-dev libpulse-dev vlc-nox sox libsox-fmt-mp3 -y
+    apt-get install curl git build-essential python-dev python-setuptools swig libasound2-dev libpulse-dev vlc-bin sox libsox-fmt-mp3 python3 python3-dev python3-venv python3-pip -y
     apt-get -y remove python-pip
     run_python -m easy_install pip
 }

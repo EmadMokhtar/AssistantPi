@@ -8,7 +8,7 @@ echo ""
 echo "## Installing dependencies..."
 apt-get install python3 python3-dev python3-venv -y
 apt-get install portaudio19-dev libffi-dev libssl-dev -y
-apt-get install vlc-nox -y
+apt-get install vlc-bin -y
 
 # Setup Virtual Environment
 echo "## Setting up Virtual Environment"
