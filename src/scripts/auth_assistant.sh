@@ -19,9 +19,9 @@ case $use_default_path in
     [Nn] )
 		read -r -p "Please enter the full path to your client_secret.json (including the filename): " path
 
-		sudo /opt/AlexaPi/env/bin/python -m googlesamples.assistant.auth_helpers --client-secrets "$path" --credentials /etc/opt/AlexaPi/assistant_credentials.json
+		sudo /usr/bin/python -m googlesamples.assistant.auth_helpers --client-secrets "$path" --credentials /etc/opt/AlexaPi/assistant_credentials.json
     ;;
     * )
-		sudo /opt/AlexaPi/env/bin/python -m googlesamples.assistant.auth_helpers --client-secrets /home/pi/Downloads/client_secret.json --credentials /etc/opt/AlexaPi/assistant_credentials.json
+		sudo /usr/bin/python -m googlesamples.assistant.auth_helpers --client-secrets /home/pi/Downloads/client_secret.json --credentials /etc/opt/AlexaPi/assistant_credentials.json
 	;;
 esac
